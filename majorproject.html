@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Editkaro.in Portfolio - Video Editing & Social Media Marketing">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="miniproject.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Editkaro.in</h1>
+            <p>Video Editing & Social Media Marketing</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay muted loop id="background-video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h2>Transform Your Content with Professional Video Editing</h2>
+            <a href="#portfolio" class="cta">View Our Work</a>
+        </div>
+        <!-- Email Subscription Form -->
+        <div class="subscription">
+            <h3>Subscribe for Updates</h3>
+            <form id="subscription-form">
+                <input type="email" id="email-subscription" placeholder="Your Email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We specialize in video editing, social media marketing, and more. From short-form videos to documentary style and color grading, we've got you covered.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="short-form">Short Form</button>
+            <button class="filter-btn" data-filter="long-form">Long Form</button>
+            <button class="filter-btn" data-filter="gaming">Gaming</button>
+            <button class="filter-btn" data-filter="football">Football</button>
+            <button class="filter-btn" data-filter="ads">Ads</button>
+        </div>
+        <div class="video-grid">
+            <div class="video-item" data-category="short-form">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+                <p>Short Form Video</p>
+            </div>
+            <div class="video-item" data-category="long-form">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+                <p>Long Form Video</p>
+            </div>
+            <div class="video-item" data-category="gaming">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+                <p>Gaming Video</p>
+            </div>
+            <div class="video-item" data-category="ads">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+                <p>Ads Video</p>
+            </div>
+            <div class="video-item" data-category="football">
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+                <p>Football Video</p>
+            </div>
+            <!-- Add more video items here -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Editkaro.in, we are passionate about transforming your ideas into captivating visual stories. Specializing in video editing and social media marketing, we craft videos that engage, inform, and entertain. From high-paced short-form content to in-depth documentaries, our goal is to provide top-tier services tailored to your specific needs. We believe in the power of creativity and technical expertise to drive impactful results for brands and individuals alike. Our mission is to help you stand out in the crowded digital space with high-quality, personalized video content.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email-contact" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="miniproject.js"></script>
+</body>
+</html>

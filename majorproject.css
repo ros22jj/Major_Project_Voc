@@ -1,0 +1,281 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(-45deg, #ff5733, #fdd835, #009688, #1976d2);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5733;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.cta {
+    background: #ff5733;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+    background: #fdd835;
+    transform: translateY(-5px);
+}
+
+/* Subscription Section */
+.subscription {
+    margin-top: 2rem;
+}
+
+.subscription h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.subscription form {
+    display: flex;
+    justify-content: center;
+}
+
+.subscription input[type="email"] {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.subscribe-btn {
+    background: red; /* Red color for the button */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background: #fdd835;
+}
+
+/* Services Section */
+#services {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+#services h2 {
+    margin-bottom: 1rem;
+}
+
+#services p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.video-item {
+    width: 300px;
+    text-align: center;
+}
+
+.video-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #ff5733;
+}
+
+/* About Us Section */
+#about {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Ensures it takes up enough space to be prominent */
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#about p {
+    max-width: 800px;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Contact Form */
+#contact {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+#contact form input, 
+#contact form textarea {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    padding: 0.75rem;
+    background: #ff5733;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#contact form button:hover {
+    background: #fdd835;
+    transform: translateY(-3px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    .video-grid {
+        flex-direction: column;
+    }
+}
